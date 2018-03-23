@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/infusion/2.0.0/infusion-all.js"></script>
+    <title>code pen</title>
+</head>
+
+<body onload="render()">
+        <button id="myButton" >RUN</button>
+<div class="container">       
+    <div class="editor">
+      
+        <div class="flc-reorderer-column ">
+            <div id="html" class="flc-reorderer-module flcSelector-layoutReorderer flc-layoutReorderer">
+                <div  class="flcSelector-layoutReorderer flc-layoutReorderer-module-dragbar editor_heading">HTML</div>
+                    <div id="html_editor" class="flc-layoutReorderer-module-content ">
+                        <textarea ></textarea>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flc-reorderer-column ">
+            <div id="css" class="flc-reorderer-module flcSelector-layoutReorderer flc-layoutReorderer">
+                <div  class="flcSelector-layoutReorderer flc-layoutReorderer-module-dragbar editor_heading">CSS</div>
+                    <div id="css_editor" class="flc-layoutReorderer-module-content ">
+                        <textarea ></textarea>
+                    </div>
+            </div> 
+        </div>
+
+        <div class="flc-reorderer-column ">
+                <div id="js" class="flc-reorderer-module flcSelector-layoutReorderer flc-layoutReorderer">
+                    <div  class="flcSelector-layoutReorderer flc-layoutReorderer-module-dragbar editor_heading">JS</div>
+                        <div id="js_editor" class="flc-layoutReorderer-module-content ">
+                                <textarea ></textarea>
+                        </div>
+                </div> 
+            </div>
+    </div>
+   
+    <div id="result">
+        <iframe name="myIframe"></iframe>     
+    </div>
+</div>   
+
+    <script type="text/javascript">
+        fluid.reorderLayout(".editor", {
+            selectors: {
+                grabHandle: ".flcSelector-layoutReorderer"
+            },
+            styles: {
+                defaultStyle: "flc-layoutReorderer-movable-default",
+                selected: "flc-layoutReorderer-movable-selected",
+                dragging: "flc-layoutReorderer-movable-dragging",
+                mouseDrag: "flc-layoutReorderer-movable-mousedrag",
+                dropMarker: "flc-layoutReorderer-dropMarker",
+                avatar: "flc-layoutReorderer-avatar"
+            },
+            disableWrap: true
+        });
+    </script>
+    
+    
+   
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/mode/xml/xml.js"></script>
+    <script src="codemirror/mode/css/css.js"></script>
+    <script src="codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

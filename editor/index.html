@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>code pen</title>
+</head>
+
+<body onload="render()">
+        <button id="myButton" >RUN</button>
+        <br>
+    <div class="container">
+        <div id="html">
+            <h3>HTML</h3>
+            <textarea id="html_editor"></textarea>
+        </div>
+        <div id="css">
+            <h3>CSS</h3>
+            <textarea id="css_editor"></textarea>
+        </div>
+        <br>
+        <div id="js">
+            <h3>JS</h3>
+            <textarea id="js_editor"></textarea>   
+        </div>
+        <div id="result">
+            <h3>RESULT</h3>
+            <iframe name="myIframe"></iframe>         
+            
+        </div>
+    </div>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/infusion/2.0.0/infusion-all.js"></script>
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/mode/xml/xml.js"></script>
+    <script src="codemirror/mode/css/css.js"></script>
+    <script src="codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
