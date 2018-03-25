@@ -55,3 +55,6 @@ iframe{
     margin:0;
     padding: 0;
 }
+.fl-progEnhance-basic, .fl-ProgEnhance-basic, .fl-progEnhance-enhanced, .fl-ProgEnhance-enhanced, .ui-helper-hidden-accessible, .flc-inlineEdit-textEditButton, .fl-hidden-accessible, .fl-inlineEdit-editModeInstruction{
+    display: none;
+ }

@@ -11,6 +11,9 @@
 </head>
 
 <body onload="render()">
+    <p class="edit flc-inlineEdit-indent">
+        <span class="flc-inlineEdit-text flc-inlineEdit-title" style="width:50%;margin:0 50%;font-size:1.3em"><strong>Enter your name</strong></p>
+    </p>
         <button id="myButton" >RUN</button>
 <div class="container">       
     <div class="editor">
@@ -63,6 +66,12 @@
             },
             disableWrap: true
         });
+
+        fluid.inlineEdit(".edit", {
+            styles: {
+                edit: ".flc-inlineEdit-title-edit .flc-inlineEdit-edit"
+                }      
+        });    
     </script>
     
     
